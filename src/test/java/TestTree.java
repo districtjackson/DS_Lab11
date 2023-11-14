@@ -64,13 +64,149 @@ public class TestTree
 	
 	public void run()
 	{
-		
+		// Check alive side
 		check(Strings.IS_IT_ALIVE);
         say("Y");
-        //now what? Think of all the input and outputs here...
 		
-
+        check("Is it a " + Strings.DUCK + "?");
+        say("N");
         
+        check(Strings.WHAT_IS_THE_ANSWER);
+        say("Dog");
+        
+        check(Strings.NEW_QUESTION + Strings.DUCK + " and a Dog");
+        say("Does it have four legs?");
+        
+        check("Answering yes to Does it have four legs? means Dog?");
+        say("Y");
+        
+        check(Strings.THANKS);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("Y");
+		
+        check("Does it have four legs?");
+        say("N");
+        
+        check("Is it a " + Strings.DUCK + "?");
+        say("Y");
+        
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("Y");
+		
+        check("Does it have four legs?");
+        say("Y");
+        
+        check("Is it a Dog?");
+        say("Y");
+
+        check(Strings.I_WIN);
+        
+        // Check non-alive
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+		
+        check("Is it a " + Strings.ROCK + "?");
+        say("N");
+        
+        check(Strings.WHAT_IS_THE_ANSWER);
+        say("House");
+        
+        check(Strings.NEW_QUESTION + Strings.ROCK + " and a House");
+        say("Does it have a door?");
+        
+        check("Answering yes to Does it have a door? means House?");
+        say("Y");
+        
+        check(Strings.THANKS);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+		
+        check("Does it have a door?");
+        say("N");
+        
+        check("Is it a " + Strings.ROCK + "?");
+        say("Y");
+        
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+		
+        check("Does it have a door?");
+        say("Y");
+        
+        check("Is it a House?");
+        say("Y");
+
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+		
+        check("Does it have a door?");
+        say("N");
+        
+        check("Is it a " + Strings.ROCK + "?");
+        say("N");
+        
+        check(Strings.WHAT_IS_THE_ANSWER);
+        say("Book");
+        
+        check(Strings.NEW_QUESTION + Strings.ROCK + " and a Book");
+        say("Is it made of stone?");
+        
+        check("Answering yes to Is it made of stone? means Book?");
+        say("N");
+        
+        check(Strings.THANKS);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+		
+        check("Does it have a door?");
+        say("N");
+        
+        check("Is it made of stone?");
+        say("Y");
+        
+        check("Is it a Rock?");
+        say("Y");
+        
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("Y");
+        
+        check(Strings.IS_IT_ALIVE);
+        say("N");
+		
+        check("Does it have a door?");
+        say("Y");
+        
+        check("Is it a House?");
+        say("Y");
+        
+        check(Strings.I_WIN);
+        check(Strings.PLAY_AGAIN);
+        say("N");
         
         //close the streams at the end to enrue good behavior.
 		comp.close();
@@ -95,7 +231,8 @@ public class TestTree
 	
 		System.out.print("you there halt");
 		
+		
+		
 	}
-	
 	
 }
